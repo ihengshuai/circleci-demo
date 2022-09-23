@@ -26,5 +26,5 @@ jobs:
           command: yarn build
       - run:
           name: deploy page
-          command: chmod x+7 ./deploy.sh && ./deploy.sh
+          command: chmod u-rwx ./deploy.sh && ./deploy.sh
           
