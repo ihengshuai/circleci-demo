@@ -1,6 +1,9 @@
 const { description } = require('../../package')
+const path = require("path");
+const { cwd } = require('process');
 
 module.exports = {
+  dest: path.join(cwd(), "dist"),
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */

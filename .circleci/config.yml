@@ -7,6 +7,8 @@ jobs:
     branches:
       only:
         circleci-project-setup
+      ignore:
+        gh-pages
 
     steps:
       - run:
@@ -23,5 +25,6 @@ jobs:
           name: build
           command: yarn build
       - run:
-          command: echo build is ok...
+          name: deploy page
+          command: ./deploy.sh
           
