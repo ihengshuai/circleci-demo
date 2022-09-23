@@ -4,6 +4,7 @@ const { cwd } = require('process');
 
 module.exports = {
   dest: path.join(cwd(), "dist"),
+  base: '/circleci-demo/',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
