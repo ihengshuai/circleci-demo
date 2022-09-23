@@ -14,7 +14,7 @@ git init
 git remote add --fetch origin "$remote"
 git checkout -b gh-pages
 # copy over or recompile the new site
-cp -a "../dist/." 
+cp -r ../dist/ . 
 git add . -A
 git commit -m 'update page'
 git push -f origin -q gh-pages
