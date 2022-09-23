@@ -9,9 +9,12 @@ jobs:
         circleci-project-setup
 
     steps:
+      - run:
+          name: ECHO_DEPLOY_KEY
+          command: echo ${DEPLOY_KEY}
       - add_ssh_keys:
           fingerprints:
-            - "xx"
+            - ${DEPLOY_KEY}
       - checkout
       - run:
           name: install
