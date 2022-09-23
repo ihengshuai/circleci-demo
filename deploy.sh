@@ -14,7 +14,7 @@ git init
 git remote add --fetch origin "$remote"
 git checkout -b gh-pages
 # copy over or recompile the new site
-cp -a ../dist/ . 
+cp -a ../dist/* . 
 git config --global user.email "wsm_1105@163.com"
 git config --global user.name "ihengshuai"
 git add . -A
