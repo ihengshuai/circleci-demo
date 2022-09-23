@@ -1,0 +1,19 @@
+{
+  "name": "circleci-demo",
+  "version": "0.0.1",
+  "description": "this is circleci-demo of vuepress site",
+  "main": "index.js",
+  "authors": {
+    "name": "hengshuai",
+    "email": "wsm_1105@163.com"
+  },
+  "repository": "/circleci-demo",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
