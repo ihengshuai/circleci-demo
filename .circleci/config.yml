@@ -16,7 +16,7 @@ jobs:
           command: echo ${DEPLOY_KEY}
       - add_ssh_keys:
           fingerprints:
-            - ${DEPLOY_KEY}
+            - "54:e5:aa:d4:d9:ad:f4:0d:f0:9b:0a:db:dd:8e:15:5f"
       - checkout
       - run:
           name: install
